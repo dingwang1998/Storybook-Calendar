@@ -42,9 +42,6 @@ function Calendar(props) {
  
     const onSetMonthYearView = setDateView.bind(null, false)
     const onSetDataView = setDateView.bind(null, true)
-    useEffect(() => {
-        calendarRef.current.focus()
-    }, [isDateView])
     return (
         <Picker tabIndex={0} ref = {calendarRef}> 
             { isDateView ? 

@@ -16,7 +16,7 @@ function FocusManager(props) {
             clearTimeout(timeoutId);
         }
         props.onFocus(e)
-    }
+    }  
 
     return (
         <div onFocus = {onFocus} onBlur = {onBlur} {...omit['onFocus','onBlur']}>
